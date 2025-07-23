@@ -1,0 +1,35 @@
+prefix: "§6[搜索] §r"
+create-success: "成功创建物资箱并打开设置界面。"
+not-looking-at-chest: "请将准星对准一个箱子。"
+box-exist: "该箱子已经是物资箱。"
+box-not-exist: "该箱子不是物资箱。"
+edit-open: "已打开该物资箱的设置界面。"
+delete-success: "物资箱已删除。"
+reload-success: "配置已重载。"
+no-permission: "你没有权限执行此命令。"
+
+search-cooldown: "此物资箱正在冷却中，物品尚未刷新。"
+search-empty: "此物资箱没有可生成的物品，请联系管理员设置。"
+loot-get: "你获得了：%item% × %amount%"
+all-taken: "该物资箱物品已被取完，进入冷却。"
+searching-title: "正在搜索..."
+
+# GUI 相关
+setting-title: "§e物资箱设置"
+search-title: "§e搜索中..."
+confirm-button-name: "§a§l确认并保存 (双击)"
+confirm-button-lore:
+  - "§7左键无效"
+  - "§7双击确认保存设置"
+rarity-display: "§7稀有度: %rarity%"
+
+# 稀有度颜色（玻璃板颜色）: 0-15 为羊毛/玻璃颜色元数据（旧版），这里直接用于显示文字，不影响逻辑
+rarity-color:
+  普通: WHITE
+  稀有: GREEN
+  罕见: BLUE
+  史诗: PURPLE
+  珍品: ORANGE
+  仙品: RED
+
+cant-take-yet: "还在搜索中，无法拿取。"

@@ -1,0 +1,29 @@
+# plugin.yml ─ 放在 src/main/resources/
+name: TarkovSearch          # ← 仅 ASCII，无空格
+display-name: 搜索          # ← 用于 /plugins 列表显示，可省略
+main: com.shuguangteam.tarkovsearch.TarkovSearch
+version: 1.0
+api-version: '1.20'
+authors: ['曙光团队']
+website: https://shuguang.space
+description: 模仿塔科夫搜索机制的物资箱插件
+
+commands:
+  ts:
+    description: TarkovSearch main command
+    usage: /ts <create|edit|delete|reload>
+    aliases: [tarkovsearch]
+
+permissions:
+  tarkovsearch.admin.create:
+    description: 允许创建物资箱
+    default: op
+  tarkovsearch.admin.edit:
+    description: 允许编辑物资箱
+    default: op
+  tarkovsearch.admin.delete:
+    description: 允许删除物资箱
+    default: op
+  tarkovsearch.admin.reload:
+    description: 允许重载配置
+    default: op
