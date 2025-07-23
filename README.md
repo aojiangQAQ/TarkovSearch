@@ -1,6 +1,3 @@
-以下是一份 **完整、一次成型可直接复制到项目根目录** 的 `README.md`，目录结构部分已用代码块保持缩进，不会错乱。
-
-```markdown
 # TarkovSearch (搜索) Plugin
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green)
