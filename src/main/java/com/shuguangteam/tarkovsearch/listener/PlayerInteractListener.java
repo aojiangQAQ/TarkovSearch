@@ -49,13 +49,13 @@ public class PlayerInteractListener implements Listener {
             }
         }
 
-        /* 打开 GUI 并创建新的 SearchSession —— 4 个参数 */
+        /* 打开搜索界面并创建会话 */
         SearchGUI gui = new SearchGUI(p, box.getGeneratedItems());
         SearchSession ss = new SearchSession(
                 p,
                 gui,
                 box.getGeneratedItems(),
-                b.getLocation());            // ← 新增：物资箱坐标
+                b.getLocation());
         plugin.getSearchSessionManager().set(p, ss);
         ss.start();
     }

@@ -15,7 +15,6 @@ import java.util.Objects;
 
 /**
  * 插件主类：TarkovSearch（游戏内显示“搜索”）
- * <p>包路径统一：com.sgly.aojiang.tarkovsearch</p>
  */
 public final class TarkovSearch extends JavaPlugin {
 
@@ -33,25 +32,21 @@ public final class TarkovSearch extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        /** 1. 保存默认配置与语言文件 */
         saveDefaultConfig();
         saveResource("messages.yml", false);
 
-        /** 2. 初始化工具 / 管理器 */
         lang                 = new Lang(this);
         boxManager           = new BoxManager(this);
-        searchSessionManager = new SearchSessionManager(this);   // ← 需有对应构造函数
+        searchSessionManager = new SearchSessionManager(this);
 
-        /** 3. 注册指令与补全 */
         TsCommandExecutor cmd = new TsCommandExecutor(this);
         Objects.requireNonNull(getCommand("ts")).setExecutor(cmd);
         Objects.requireNonNull(getCommand("ts")).setTabCompleter(new TabCompleteTs());
 
-        /** 4. 注册事件监听器 */
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(new PlayerInteractListener(this), this);
         pm.registerEvents(new InventoryListener(this), this);
-        pm.registerEvents(new BlockListener(this), this);        // ← 需有对应构造函数
+        pm.registerEvents(new BlockListener(this), this);
 
         getLogger().info("[TarkovSearch] 已启用 - 版本 " + getDescription().getVersion());
     }

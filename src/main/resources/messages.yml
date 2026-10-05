@@ -23,7 +23,7 @@ confirm-button-lore:
   - "§7双击确认保存设置"
 rarity-display: "§7稀有度: %rarity%"
 
-# 稀有度颜色（玻璃板颜色）: 0-15 为羊毛/玻璃颜色元数据（旧版），这里直接用于显示文字，不影响逻辑
+# 稀有度颜色配置；当前界面的颜色由 ItemUtils 固定映射，此配置暂未读取
 rarity-color:
   普通: WHITE
   稀有: GREEN

@@ -48,7 +48,7 @@ public class BoxData implements ConfigurationSerializable {
         map.put("location", location);
         map.put("poolItems", poolItems);
         map.put("cooldownEnd", cooldownEnd);
-        // generatedItems 不序列化，重启后重新生成（也可序列化，看你需求，这里简单处理）。
+        // 生成的物品不持久化，重启后首次搜索时重新抽取。
         return map;
     }
 

@@ -7,7 +7,7 @@ probability:
   珍品: 4.0
   仙品: 1.0
 
-# 搜索动画单个物品持续时间（单位：tick，Minecraft 每秒 20 tick），最终会在 1~5 秒间随机
+# 单个物品的搜索动画时长范围（单位：秒），执行时换算为 tick
 search:
   min_seconds: 1
   max_seconds: 5

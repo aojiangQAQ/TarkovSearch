@@ -1,11 +1,10 @@
-# plugin.yml ─ 放在 src/main/resources/
-name: TarkovSearch          # ← 仅 ASCII，无空格
-display-name: 搜索          # ← 用于 /plugins 列表显示，可省略
+name: TarkovSearch
+display-name: 搜索
 main: com.shuguangteam.tarkovsearch.TarkovSearch
 version: 1.0
 api-version: '1.20'
-authors: ['曙光团队']
-website: https://shuguang.space
+authors: ['aojiangQAQ（鳌江）', '曙光团队']
+website: https://github.com/aojiangQAQ/TarkovSearch
 description: 模仿塔科夫搜索机制的物资箱插件
 
 commands:
